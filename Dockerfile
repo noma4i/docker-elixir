@@ -1,10 +1,13 @@
 FROM trenpixster/elixir:1.4.1
 
+RUN apt-key adv --keyserver keyserver.ubuntu.com --recv-keys B97B0AFCAA1A47F044F244A07FCC7D46ACCC4CF8 &&\
+    echo "deb http://apt.postgresql.org/pub/repos/apt/ xenial-pgdg main" > /etc/apt/sources.list.d/pgdg.list &&\
+    apt-get update &&\
+    apt-get -yq install postgresql-client-9.4 --no-install-recommends
+
 RUN apt-get update && apt-get install -y \
     build-essential \
     git \
-    postgresql-client-9.4 \
-    build-essential \
     erlang-dev \
     && apt-get clean \
     && rm -rf /var/lib/apt/lists/*
