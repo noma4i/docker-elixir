@@ -4,6 +4,8 @@ Purpose of this container is to create fully working setup for CircleCI
 
 ### Example CircleCI `config.yml`
 
+Following example works well if you have `phoenix/non-phoenix umbrella/plain app` with `Ecto`
+
 ```
 version: 2
 jobs:
