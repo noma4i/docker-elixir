@@ -2,7 +2,7 @@
 
 Purpose of this container is to create fully working setup for CircleCI
 
-#Example CircleCI config
+### Example CircleCI `config.yml`
 
 ```
 version: 2
