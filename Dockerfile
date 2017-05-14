@@ -9,6 +9,7 @@ RUN apt-get update && apt-get install -y \
     build-essential \
     git \
     elixir \
+    erlang-tools \
     erlang-base-hipe \
     erlang-dev \
     && apt-get clean \
