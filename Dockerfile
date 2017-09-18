@@ -10,6 +10,7 @@ RUN apt-get update && apt-get install -y \
     git \
     elixir \
     erlang-tools \
+    erlang-parsetools \
     erlang-base-hipe \
     erlang-dev \
     && apt-get clean \
