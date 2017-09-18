@@ -8,7 +8,7 @@ RUN apt-key adv --keyserver keyserver.ubuntu.com --recv-keys B97B0AFCAA1A47F044F
 RUN apt-get update && apt-get install -y \
     build-essential \
     git \
-    ruby2.3 \
+    ruby \
     elixir \
     erlang-tools \
     erlang-parsetools \
